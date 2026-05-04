@@ -1,0 +1,15 @@
+@import './tailwind.css';
+@import './theme.css';
+@import './fonts.css';
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style global */
+body {
+  font-family: sans-serif;
+}
