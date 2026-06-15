@@ -65,7 +65,7 @@ export function Navigation() {
             </a>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="flex items-center gap-1">
               <a href="/" className={navLinkClass('/')}>
                 <Home className="w-4 h-4" />
                 Accueil
