@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Home, Users, Building2, Euro, Lightbulb, TrendingUp, ChevronDown, MapPin, Sparkles, Phone } from 'lucide-react';
-import logoImage from 'figma:asset/2772ccc80dff05f515fa54cc2ca7d1067b69658a.png';
+import logoImage from 'logo.png';
 import { EstimationModal } from './EstimationModal';
 
 export function Navigation() {
