@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Home, Users, Building2, Euro, Lightbulb, TrendingUp, ChevronDown, MapPin, Sparkles, Phone } from 'lucide-react';
-import logoImage from 'logo.png';
+const logoImage = "/logo.png";
 import { EstimationModal } from './EstimationModal';
 
 export function Navigation() {
