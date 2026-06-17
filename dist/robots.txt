@@ -1,0 +1,15 @@
+# robots.txt pour Les Clés du Cabanon
+# https://www.clesducabanon.fr
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Crawl-delay pour les bots respectueux
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://www.clesducabanon.fr/sitemap.xml
