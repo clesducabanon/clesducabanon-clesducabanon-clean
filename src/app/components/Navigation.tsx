@@ -21,7 +21,7 @@ export function Navigation() {
               </div>
             </a>
 
-            <div className="flex flex-1 items-center justify-center gap-6">
+            <div className="hidden md:flex flex-1 items-center justify-center gap-6">
               <a href="/" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
                 <Home className="w-4 h-4" /> Accueil
               </a>
