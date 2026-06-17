@@ -21,7 +21,7 @@ export function Navigation() {
               </div>
             </a>
 
-            <div className="hidden md:flex flex-1 items-center justify-center gap-6">
+            <div className="hidden lg:flex flex-1 items-center justify-center gap-6">
               <a href="/" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
                 <Home className="w-4 h-4" /> Accueil
               </a>
@@ -55,7 +55,7 @@ export function Navigation() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg text-[#1a2744]"
+              className="lg:hidden p-2 rounded-lg text-[#1a2744]"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
