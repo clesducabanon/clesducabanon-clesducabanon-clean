@@ -13,7 +13,7 @@ export function Navigation() {
       <nav className="fixed top-0 w-full bg-white/97 backdrop-blur-sm z-50 border-b border-[#C9A84C]/20 shadow-sm">
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 gap-6">
-            <a href="/" className="flex items-center gap-3">
+            <a href="/" className="flex items-center gap-3 shrink-0">
               <img src={logoImage} alt="Clés du Cabanon" className="h-12 w-auto" />
               <div>
                 <div className="font-bold text-base text-[#1a2744]">CLÉS DU CABANON</div>
@@ -22,29 +22,18 @@ export function Navigation() {
             </a>
 
             <div className="hidden lg:flex flex-1 items-center justify-center gap-6">
-              <a href="/" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
-                <Home className="w-4 h-4" /> Accueil
-              </a>
-              <a href="/#comment-ca-marche" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
-                <Lightbulb className="w-4 h-4" /> Comment ça marche
-              </a>
-              <a href="/#tarifs" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
-                <Euro className="w-4 h-4" /> Nos Formules
-              </a>
-              <a href="/#zones" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
-                <MapPin className="w-4 h-4" /> Zones
-              </a>
-              <a href="/services" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
-                <Building2 className="w-4 h-4" /> Services
-              </a>
-              <a href="/proprietaire" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
-                <Users className="w-4 h-4" /> Propriétaires
-              </a>
+              <a href="/" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Home className="w-4 h-4" />Accueil</a>
+              <a href="/#comment-ca-marche" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Lightbulb className="w-4 h-4" />Comment ça marche</a>
+              <a href="/#tarifs" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Euro className="w-4 h-4" />Nos Formules</a>
+              <a href="/#zones" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><MapPin className="w-4 h-4" />Zones</a>
+              <a href="/services" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Building2 className="w-4 h-4" />Services</a>
+              <a href="/proprietaire" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Users className="w-4 h-4" />Propriétaires</a>
+            </div>
 
+            <div className="hidden lg:flex items-center gap-3 shrink-0">
               <a href="tel:+33625401480" className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#0AADA3] text-white font-semibold">
                 <Phone className="w-4 h-4" /> Appeler
               </a>
-
               <button
                 onClick={() => setIsEstimationModalOpen(true)}
                 className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#C9A84C] text-white font-semibold"
@@ -63,7 +52,7 @@ export function Navigation() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden bg-white border-t border-[#C9A84C]/20">
+          <div className="lg:hidden bg-white border-t border-[#C9A84C]/20">
             <div className="px-4 py-4 space-y-3">
               <a href="tel:+33625401480" className="flex justify-center gap-2 px-6 py-4 rounded-full bg-[#0AADA3] text-white font-bold">
                 <Phone className="w-5 h-5" /> Appeler maintenant
@@ -79,12 +68,12 @@ export function Navigation() {
                 <TrendingUp className="w-5 h-5" /> Estimation gratuite
               </button>
 
-              <a href="/" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Home className="w-5 h-5" /> Accueil</a>
-              <a href="/#comment-ca-marche" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Lightbulb className="w-5 h-5" /> Comment ça marche</a>
-              <a href="/#tarifs" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Euro className="w-5 h-5" /> Nos Formules</a>
-              <a href="/#zones" className="flex gap-3 px-4 py-3 text-[#1a2744]"><MapPin className="w-5 h-5" /> Zones d'intervention</a>
-              <a href="/services" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Building2 className="w-5 h-5" /> Services</a>
-              <a href="/proprietaire" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Users className="w-5 h-5" /> Propriétaires</a>
+              <a href="/" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Home className="w-5 h-5" />Accueil</a>
+              <a href="/#comment-ca-marche" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Lightbulb className="w-5 h-5" />Comment ça marche</a>
+              <a href="/#tarifs" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Euro className="w-5 h-5" />Nos Formules</a>
+              <a href="/#zones" className="flex gap-3 px-4 py-3 text-[#1a2744]"><MapPin className="w-5 h-5" />Zones d'intervention</a>
+              <a href="/services" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Building2 className="w-5 h-5" />Services</a>
+              <a href="/proprietaire" className="flex gap-3 px-4 py-3 text-[#1a2744]"><Users className="w-5 h-5" />Propriétaires</a>
             </div>
           </div>
         )}
