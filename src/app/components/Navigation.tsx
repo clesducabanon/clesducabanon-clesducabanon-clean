@@ -21,7 +21,7 @@ export function Navigation() {
               </div>
             </a>
 
-            <div className="hidden lg:flex flex-1 items-center justify-center gap-6">
+            <div className="desktop-nav flex flex-1 items-center justify-center gap-6">
               <a href="/" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Home className="w-4 h-4" />Accueil</a>
               <a href="/#comment-ca-marche" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Lightbulb className="w-4 h-4" />Comment ça marche</a>
               <a href="/#tarifs" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Euro className="w-4 h-4" />Nos Formules</a>
@@ -30,7 +30,7 @@ export function Navigation() {
               <a href="/proprietaire" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]"><Users className="w-4 h-4" />Propriétaires</a>
             </div>
 
-            <div className="hidden lg:flex items-center gap-3 shrink-0">
+            <div className="desktop-cta flex items-center gap-3 shrink-0">
               <a href="tel:+33625401480" className="flex items-center gap-2 px-5 py-3 rounded-full bg-[#0AADA3] text-white font-semibold">
                 <Phone className="w-4 h-4" /> Appeler
               </a>
@@ -44,7 +44,7 @@ export function Navigation() {
 
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 rounded-lg text-[#1a2744]"
+              className="mobile-burger p-2 rounded-lg text-[#1a2744]"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -52,7 +52,7 @@ export function Navigation() {
         </div>
 
         {isOpen && (
-          <div className="lg:hidden bg-white border-t border-[#C9A84C]/20">
+          <div className="mobile-panel bg-white border-t border-[#C9A84C]/20">
             <div className="px-4 py-4 space-y-3">
               <a href="tel:+33625401480" className="flex justify-center gap-2 px-6 py-4 rounded-full bg-[#0AADA3] text-white font-bold">
                 <Phone className="w-5 h-5" /> Appeler maintenant

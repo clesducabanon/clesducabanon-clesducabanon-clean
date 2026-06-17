@@ -4,3 +4,25 @@
 
 @import './theme.css';
 @import './fonts.css';
+@media (max-width: 1023px) {
+  .desktop-nav,
+  .desktop-cta {
+    display: none !important;
+  }
+
+  .mobile-burger {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav,
+  .desktop-cta {
+    display: flex !important;
+  }
+
+  .mobile-burger,
+  .mobile-panel {
+    display: none !important;
+  }
+}
