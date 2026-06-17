@@ -11,8 +11,8 @@ export function Navigation() {
   return (
     <>
       <nav className="fixed top-0 w-full bg-white/97 backdrop-blur-sm z-50 border-b border-[#C9A84C]/20 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-20 gap-6">
             <a href="/" className="flex items-center gap-3">
               <img src={logoImage} alt="Clés du Cabanon" className="h-12 w-auto" />
               <div>
@@ -21,7 +21,7 @@ export function Navigation() {
               </div>
             </a>
 
-            <div className="hidden md:flex items-center gap-4">
+            <div className="flex flex-1 items-center justify-center gap-6">
               <a href="/" className="flex items-center gap-2 text-[#1a2744] hover:text-[#0AADA3]">
                 <Home className="w-4 h-4" /> Accueil
               </a>
